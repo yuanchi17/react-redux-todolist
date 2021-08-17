@@ -4,8 +4,16 @@
   "private": true,
   "main": "index.js",
   "repository": "https://github.com/yuanchi17/react-redux-todolist.git",
+  "homepage": "https://yuanchi17.github.io/react-redux-todolist",
   "author": "李元琦 <joyceleeya@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy": "yarn build && gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -17,7 +25,10 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
+    "gh-pages": "^3.2.3",
+    "jquery": "^3.6.0",
     "lodash": "^4.17.21",
+    "popper": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
@@ -25,12 +36,6 @@
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
     "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
