@@ -8,6 +8,11 @@ exports.DelItem = (id) => ({
   payload: { id },
 })
 
+exports.DelDoneItem = (id) => ({
+  type: 'DONELIST_DEL',
+  payload: { id },
+})
+
 exports.AddItem = (title) => ({
   type: 'TODOLIST_ADD',
   payload: { title },

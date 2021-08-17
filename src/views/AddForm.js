@@ -7,7 +7,7 @@ const From = () => {
   const [title, setTitle] = useState('')
 
   return (
-    <div className="input-group px-3">
+    <form className="input-group px-3" onSubmit={() => dispatch(AddItem(title))}>
       <input
         type="text"
         className="form-control"
@@ -25,7 +25,7 @@ const From = () => {
           新增
         </button>
       </div>
-    </div>
+    </form>
   )
 }
 

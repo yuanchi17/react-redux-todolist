@@ -26,6 +26,13 @@ const todoList = (state = initState, action) => {
         todoItems: state.todoItems.filter((item, i) => i !== selectId),
       }
     }
+    case 'DONELIST_DEL': {
+      const selectId = action.payload.id
+      return {
+        ...state,
+        doneItems: state.doneItems.filter((item, i) => i !== selectId),
+      }
+    }
     case 'TODOLIST_ADD': {
       const title = action.payload.title
       const maxId = _.get(

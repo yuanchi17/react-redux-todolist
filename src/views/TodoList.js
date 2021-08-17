@@ -13,7 +13,7 @@ const TodoList = () => {
 
   return (
     <div id="todoList">
-      <ul className="mt-2 px-0">
+      <ul className="px-0">
         {todoItems.map((item, i) => (
           <li key={item.id} className="list-li d-flex mx-3 mb-2 p-2">
             <p className="my-auto">{item.title}</p>
